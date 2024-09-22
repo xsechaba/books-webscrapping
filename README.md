@@ -2,6 +2,12 @@
 
 This project is a simple web scraper that has been built with the use of Python, that essentially extracts book titles and prices from [Books to Scrape](http://books.toscrape.com/). The application is containerized using Docker and managed with Docker Compose for ease of deployment and scalability.
 
+## Website Before Scraping
+
+Below is an image of the website before the web scraping process begins:
+
+![Website Before Scraping](images/site_before_scraping.png)
+
 ## Features
 
 - Scrapes book titles and prices from an online bookstore.
