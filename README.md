@@ -36,14 +36,12 @@ cd web_scraper_docker_exp
 
 ### **2. Create the Output Directory**
 Ensure that the output directory exists:
-
 ```bash
 mkdir output
 ```
 
 ### **3. Build and Run the Docker Container**
 Use Docker Compose to build the image and run the container:
-
 ```bash
 docker-compose up --build
 ```
@@ -54,20 +52,19 @@ Note: The first time you run this command, it will build the Docker image. Subse
 After the script completes, the scraped data will be saved to output/books.csv.
 
 To view the contents:
-
 On Windows Command Prompt:
-
 ```bash
 type output\books.csv
 ```
+
 On Windows PowerShell or Unix-based Systems:
 
 ```bash
 cat output/books.csv
 ```
+
 ### **5. Stop the Docker Container**
 To stop the running container:
-
 ```bash
 docker-compose down
 ```
