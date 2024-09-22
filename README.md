@@ -1,6 +1,6 @@
 # Web Scraper Docker Project
 
-This project is a simple web scraper built with Python that extracts book titles and prices from [Books to Scrape](http://books.toscrape.com/). The application is containerized using Docker and managed with Docker Compose for ease of deployment and scalability.
+This project is a simple web scraper that has been built with the use of Python, that essentially extracts book titles and prices from [Books to Scrape](http://books.toscrape.com/). The application is containerized using Docker and managed with Docker Compose for ease of deployment and scalability.
 
 ## Features
 
@@ -17,13 +17,17 @@ This project is a simple web scraper built with Python that extracts book titles
 
 ## Project Structure
 
-web_scraper_docker_exp/
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-├── scrape_books.py
-├── .gitignore
-└── README.md
+web_scraper_docker_exp/  
+├── Dockerfile        
+├── docker-compose.yml       
+├── requirements.txt  
+├── scrape_books.py           
+├── README.md                
+├── LICENSE              
+├── .gitignore                
+└── output/                   
+    └── books.csv             
+
 
 ## Setup and Usage
 
@@ -50,7 +54,7 @@ docker-compose up --build
 
 Note: The first time you run this command, it will build the Docker image. Subsequent runs can use docker-compose up without the --build flag unless you've made changes to the Dockerfile or application code.
 
-4. View the Output
+### **4. View the Output**
 After the script completes, the scraped data will be saved to output/books.csv.
 
 To view the contents:
@@ -96,6 +100,6 @@ docker-compose down
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
-'Books' to Scrape' for providing a practice website for web scraping.
-Docker for containerization tools.
-BeautifulSoup and Requests for making web scraping in Python easy.
+'Books' to Scrape' for providing a practice website for web scraping.  
+Docker for containerization tools.  
+BeautifulSoup and Requests for making web scraping in Python easy.  
