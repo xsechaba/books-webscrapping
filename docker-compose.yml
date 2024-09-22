@@ -1,0 +1,11 @@
+version: '3.8'  # Use a recent version of the Compose file format
+
+services:
+  web-scraper:
+    image: web-scraper:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./output:/app/output
+    command: python scrape_books.py
